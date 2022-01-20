@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'shabnam';
+    src: url('../fonts/Shabnam.eot')format('eot'),
+    url('../fonts/Shabnam.ttf')format('truetype'),
+    url('../fonts/Shabnam.woff')format('woff'),
+    url('../fonts/Shabnam.woff2')format('woff2');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'shabnam';
+    font-size: 14px;
+}
+ul,li{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+a{
+    color: #666;
+}
+body{
+    direction: rtl;
+    background-color: #fff;
+}
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+header ul{
+    display: flex;
+}
+
+header ul li a{
+    margin: 0 3px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+header ul li a:hover{
+    background-color: #ec008c;
+}
+header nav{
+    box-shadow: none !important;
+}
+nav .brand-logo{
+    position: relative;
+}
+.home{
+    background: url('../img/home-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.home .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    opacity: .7;
+}
