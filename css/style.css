@@ -165,10 +165,6 @@ nav .brand-logo {
     display: flex;
 }
 
-.about {
-    /* height: 100vh; */
-}
-
 .about img {
     width: 100%;
     box-shadow: 0 0 10px 5px #ddd;
