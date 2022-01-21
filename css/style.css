@@ -30,6 +30,9 @@ a, a:hover {
 a {
     color: #666;
 }
+.section{
+    margin: 70px auto;
+}
 
 body {
     direction: ltr;
@@ -162,7 +165,7 @@ nav .brand-logo {
 }
 
 .about {
-    margin: 100px auto;
+    /* height: 100vh; */
 }
 
 .about img {
@@ -237,14 +240,14 @@ nav .brand-logo {
         service style
 ===============================
  */
-.service {
+.service , .work,.about{
     width: 100%;
 }
 
 .service .service-item {
     width: 100%;
     overflow: hidden;
-    height: 300px;
+    height: 250px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -262,7 +265,7 @@ nav .brand-logo {
 }
 .service .service-item img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -322,10 +325,11 @@ nav .brand-logo {
 */
 .work{
     width: 100%;
+    margin: 100px auto;
 }
 .work .work-item{
     width: 100%;
-    height: 300px;
+    height: 250px;
     position: relative;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -337,9 +341,25 @@ nav .brand-logo {
 }
 .work .work-item img{
     width: 100%;
-    height: 300px;
+    height: 250px;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
 }
-
+.work .work-item:hover img{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
 .work-item span{
     position: absolute;
     top: 0;
@@ -381,4 +401,23 @@ nav .brand-logo {
     -moz-transition: all .3s ease-in;
     -ms-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
+}
+
+/* 
+===============================
+        contact style
+===============================
+*/
+.contact{
+    width: 100%;
+}
+.contact .contact-img{
+    width: 100%;
+    background: url(../img/contact-bg.jpg);
+    padding: 200px 0;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
