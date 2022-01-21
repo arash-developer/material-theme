@@ -30,7 +30,8 @@ a, a:hover {
 a {
     color: #666;
 }
-.section{
+
+.section {
     margin: 70px auto;
 }
 
@@ -240,7 +241,7 @@ nav .brand-logo {
         service style
 ===============================
  */
-.service , .work,.about{
+.service, .work, .about {
     width: 100%;
 }
 
@@ -256,13 +257,15 @@ nav .brand-logo {
     margin-bottom: 10px;
     position: relative;
 }
-.service .service-item:hover img{
+
+.service .service-item:hover img {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+
 .service .service-item img {
     width: 100%;
     height: 250px;
@@ -279,7 +282,7 @@ nav .brand-logo {
     -o-transition: all .3s ease-in;
 }
 
-.service-item span{
+.service-item span {
     position: absolute;
     background-color: rgba(0, 0, 0, .8);
     opacity: 1;
@@ -296,7 +299,8 @@ nav .brand-logo {
     -ms-transition: all .4s ease-in;
     -o-transition: all .4s ease-in;
 }
-.service-item span p{
+
+.service-item span p {
     font-size: 20px;
     color: #fff;
     opacity: 1;
@@ -306,10 +310,12 @@ nav .brand-logo {
     -ms-transition: all .4s ease-in;
     -o-transition: all .4s ease-in;
 }
-.service-item:hover span{
+
+.service-item:hover span {
     opacity: 0;
 }
-.service-item:hover span p{
+
+.service-item:hover span p {
     transform: translateX(200px);
     -webkit-transform: translateX(200px);
     -moz-transform: translateX(200px);
@@ -323,11 +329,12 @@ nav .brand-logo {
         work style
 ============================
 */
-.work{
+.work {
     width: 100%;
     margin: 100px auto;
 }
-.work .work-item{
+
+.work .work-item {
     width: 100%;
     height: 250px;
     position: relative;
@@ -339,7 +346,8 @@ nav .brand-logo {
     -o-border-radius: 10px;
     overflow: hidden;
 }
-.work .work-item img{
+
+.work .work-item img {
     width: 100%;
     height: 250px;
     transform: scale(1.1);
@@ -353,14 +361,16 @@ nav .brand-logo {
     -ms-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
 }
-.work .work-item:hover img{
+
+.work .work-item:hover img {
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
 }
-.work-item span{
+
+.work-item span {
     position: absolute;
     top: 0;
     right: 0;
@@ -372,7 +382,8 @@ nav .brand-logo {
     -ms-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
 }
-.work-item span p{
+
+.work-item span p {
     position: absolute;
     bottom: 10px;
     right: 50%;
@@ -390,10 +401,12 @@ nav .brand-logo {
     -ms-transform: translateX(50%);
     -o-transform: translateX(50%);
 }
-.work-item:hover span{
+
+.work-item:hover span {
     background: rgba(0, 0, 0, .8);
 }
-.work-item:hover p{
+
+.work-item:hover p {
     opacity: 1;
     bottom: 120px;
     transition: all .3s ease-in;
@@ -408,10 +421,11 @@ nav .brand-logo {
         contact style
 ===============================
 */
-.contact{
+.contact {
     width: 100%;
 }
-.contact .contact-img{
+
+.contact .contact-img {
     width: 100%;
     background: url(../img/contact-bg.jpg);
     padding: 200px 0;
@@ -420,4 +434,76 @@ nav .brand-logo {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contact .contact-desc {
+    padding: 0 100px;
+    margin: 0 auto;
+    background: #fff;
+}
+.contact .contact-desc form{
+   margin-top: -100px;
+   background: #fff;
+   padding-top: 50px;
+}
+.contact-desc form input {
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+.contact-desc form .btn-send {
+	background-color: #ff8f00;
+	padding: 10px 20px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	box-shadow: 0 0 5px 5px #ddd;
+	font-weight: 600;
+	border-radius: 20px;
+	padding: 12px 35px;
+	cursor: pointer;
+}
+.contact .info{
+    text-align: center;
+    color: #666;
+}
+.fa-instagram-square{
+    color: #E4405F;
+}
+.fa-twitter-square{
+    color: #1da1f2;
+}
+.fa-telegram{
+    color: #0088cc;
+}
+.fa-linkedin-in{
+    color: #0a66c2;
+}
+.contact ul.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact ul.social li{
+    margin: 0 20px;
+}
+.contact ul.social li a svg{
+    font-size: 40px;
+}
+
+footer .footer{
+    text-align: center;
+}
+.footer p{
+    color: #666;
+    font-size: 16px;
+}
+.footer p svg{
+    color: #E4405F;
+    margin: 0 5px;
+    font-size: 20px;
+}
+.footer .copy-right{
+    color: #3dfd4d;
+    background: rgba(0, 0, 0, .8);
 }
