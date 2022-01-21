@@ -8,6 +8,7 @@
     <title>partak-web</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,13 +20,23 @@
                 <a href="#" class="brand-logo left">
                     <img src="img/logo4.png" alt="">
                 </a>
-                <ul class="right">
+                <a href="#" class="sidenav-trigger right" data-target="mobile-link"><i class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Contact us</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Our Services</a></li>
                 </ul>
+                <ul class="sidenav" id="mobile-link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Our Services</a></li>
+                </ul>
+                
             </div>
         </nav>
     </header>
@@ -49,7 +60,7 @@
     <section class="about section">
         <div class="container section">
             <div class="row flex">
-                <div class="col s12 m6 l9 xl9">
+                <div class="col s12 m12 l9 xl9">
                     <div class="about-content">
                         <h4 class="title-section">About Us</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex obcaecati culpa quidem
@@ -90,7 +101,7 @@
                     </div>
                     <a href="#" target="_blank" class="link-contact">Contact Us</a>
                 </div>
-                <div class="col s12 m6 l3 xl3">
+                <div class="col s12 m12 l3 xl3">
                     <img src="img/about.jpg" alt="">
                 </div>
             </div>
@@ -245,19 +256,19 @@
                 </div>
             </div>
             <div class="row section">
-                <div class="col s12 m6 l4">
+                <div class="col s12 m4 l4">
                     <div class="info">
                         <h5 class="title-section">Email</h5>
                         <p>arashdeveloper6744@gmail.com</p>
                     </div>
                 </div>
-                <div class="col s12 m6 l4">
+                <div class="col s12 m4 l4">
                     <div class="info">
                         <h5 class="title-section">Phone</h5>
                         <p>+9800000000</p>
                     </div>
                 </div>
-                <div class="col s12 m6 l4">
+                <div class="col s12 m4 l4">
                     <div class="info">
                         <h5 class="title-section">Address</h5>
                         <p>IR.IRAN.ESFAHAN</p>
@@ -294,6 +305,13 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav({
+                edge: 'right'
+            })
+        })
+    </script>
 </body>
 
 </html>

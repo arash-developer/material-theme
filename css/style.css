@@ -45,7 +45,6 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
 }
 
 header ul {
@@ -80,6 +79,7 @@ nav .brand-logo {
     background-position: center;
     height: 100vh;
     position: relative;
+    z-index: -1;
 }
 
 .home .overlay {
@@ -437,69 +437,107 @@ nav .brand-logo {
     margin: 0 auto;
     background: #fff;
 }
-.contact .contact-desc form{
-   margin-top: -100px;
-   background: #fff;
-   padding-top: 50px;
+
+.contact .contact-desc form {
+    margin-top: -100px;
+    background: #fff;
+    padding-top: 50px;
 }
+
 .contact-desc form input {
     color: #666;
     border: 1px solid #ddd;
 }
 
 .contact-desc form .btn-send {
-	background-color: #ff8f00;
-	padding: 10px 20px;
-	display: inline-block;
-	color: #fff;
-	margin-top: 20px;
-	box-shadow: 0 0 5px 5px #ddd;
-	font-weight: 600;
-	border-radius: 20px;
-	padding: 12px 35px;
-	cursor: pointer;
+    background-color: #ff8f00;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 5px 5px #ddd;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 12px 35px;
+    cursor: pointer;
 }
-.contact .info{
+
+.contact .info {
     text-align: center;
     color: #666;
 }
-.fa-instagram-square{
+
+.fa-instagram-square {
     color: #E4405F;
 }
-.fa-twitter-square{
+
+.fa-twitter-square {
     color: #1da1f2;
 }
-.fa-telegram{
+
+.fa-telegram {
     color: #0088cc;
 }
-.fa-linkedin-in{
+
+.fa-linkedin-in {
     color: #0a66c2;
 }
-.contact ul.social{
+
+.contact ul.social {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.contact ul.social li{
+
+.contact ul.social li {
     margin: 0 20px;
 }
-.contact ul.social li a svg{
+
+.contact ul.social li a svg {
     font-size: 40px;
 }
 
-footer .footer{
+footer .footer {
     text-align: center;
 }
-.footer p{
+
+.footer p {
     color: #666;
     font-size: 16px;
 }
-.footer p svg{
+
+.footer p svg {
     color: #E4405F;
     margin: 0 5px;
     font-size: 20px;
 }
-.footer .copy-right{
+
+.footer .copy-right {
     color: #3dfd4d;
     background: rgba(0, 0, 0, .8);
+}
+
+/* 
+==================================
+        Responcive Style 
+==================================
+*/
+
+#mobile-link {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+    .section {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .about .flex{
+        display: unset;
+    }
+    .link-contact{
+        margin-bottom: 25px;
+    }
 }
