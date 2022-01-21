@@ -151,18 +151,21 @@ nav .brand-logo {
 .scroll-down img {
     width: 22px;
 }
-/* 
+
+/*
 ========================
-        about style 
+        about style
 ========================
 */
-.flex{
+.flex {
     display: flex;
 }
-.about{
+
+.about {
     margin: 100px auto;
 }
-.about img{
+
+.about img {
     width: 100%;
     box-shadow: 0 0 10px 5px #ddd;
     border-radius: 7px;
@@ -171,14 +174,16 @@ nav .brand-logo {
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
 }
-.about .about-content h4{
+
+.title-section {
     font-size: 25px;
     font-weight: 700;
     color: #666;
     position: relative;
     padding-bottom: 10px;
 }
-.about .about-content h4::before{
+
+.title-section::before {
     content: '';
     width: 100px;
     position: absolute;
@@ -186,25 +191,31 @@ nav .brand-logo {
     height: 2px;
     background-color: #ff8f00;
 }
-.about .about-content p{
+
+.about .about-content p {
     line-height: 2rem;
     color: #777;
     text-align: justify;
 }
-.about .about-item{
+
+.about .about-item {
     text-align: center;
     margin-top: 15px;
 }
-.about .about-item h5{
+
+.about .about-item h5 {
     color: #555;
 }
-.about .about-item h6{
+
+.about .about-item h6 {
     font-size: 13px;
     color: #777;
 }
-.about .link-contact{
+
+.about .link-contact {
     background-color: #ff8f00;
     padding: 10px 20px;
+    display: inline-block;
     color: #fff;
     margin-top: 20px;
     box-shadow: 0 0 5px 5px #ddd;
@@ -215,6 +226,79 @@ nav .brand-logo {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-.about .link-contact:hover{
+
+.about .link-contact:hover {
     box-shadow: none;
+}
+
+/*
+===============================
+        service style
+===============================
+ */
+.service {
+    width: 100%;
+}
+
+.service .service-item {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.service .service-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.service-item span{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+}
+.service-item span p{
+    font-size: 20px;
+    color: #fff;
+    opacity: 1;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+}
+.service-item:hover span{
+    opacity: 0;
+}
+.service-item:hover span p{
+    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    -moz-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -o-transform: translateX(200px);
+    opacity: 0;
 }
